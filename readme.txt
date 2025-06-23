@@ -1,3 +1,9 @@
+All I did here was create a build script to make an IPK package built for miyoo cfw and fixed some code.
+It's still really slow on the powkiddy v90. Might run a tiny bit better when compiled to bytecode but it will probably be a VERY 
+small differnce.
+
+
+Original Readme:
 
 Modified port for the GCW0/RG-350 (OpenDingux) by gameblabla
 Trying to get this to run at acceptable speeds was challenging.
