@@ -1,0 +1,5 @@
+title=Froggo's Adventure
+exec=/mnt/games/froggo/run.sh
+icon=/mnt/games/froggo/icon.png
+description=Froggo's adventure (pygame) for miyoo
+

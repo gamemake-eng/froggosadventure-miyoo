@@ -1,0 +1,7 @@
+Package: froggos-adventure
+Version: 0.0.1
+Description: Port of Froggos Adventure
+Section: games
+Priority: optional
+Maintainer: Michealtheratz
+Architecture: arm

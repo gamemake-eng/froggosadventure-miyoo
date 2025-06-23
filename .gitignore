@@ -1,2 +1,11 @@
-*.opk
+*.ipk
+*.tar.gz
+
+ipkbuild/data/mnt/games/froggo/FroggosAdventure.py
+ipkbuild/data/mnt/games/froggo/assets/*
+ipkbuild/data/mnt/games/froggo/audios/*
+ipkbuild/data/mnt/games/froggo/icon.png
+ipkbuild/data/mnt/games/froggo/readme.txt
+
+
 

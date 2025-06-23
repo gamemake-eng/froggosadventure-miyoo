@@ -7,7 +7,7 @@ pygame.mixer.init()
 pygame.init()
 
 screenWidth = 320 #112
-screenHeight = 304 #116
+screenHeight = 240 #116
 
 crack = pygame.mixer.Sound("audios/knock.wav")
 coinCollect = pygame.mixer.Sound("audios/coin.wav")
@@ -964,7 +964,7 @@ class goalSign():
             pygame.mixer.Sound.play(blockSound)
         if self.flippingTimer == 250:
             pygame.mixer.music.stop()
-            pygame.mixer.music.load("audios/Victory.wav")
+            pygame.mixer.music.load("audios/Victory.mp3")
             pygame.mixer.music.play(0)
         if self.flippingTimer > 0 and self.goal:
             self.flippingTimer -= 1
@@ -1456,6 +1456,7 @@ keys = pygame.key.get_pressed()
 while run and not keys[pygame.K_RETURN] and not keys[pygame.K_x]:          #Title screen
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
+            print("Goodbye")
             run = False
 
     window.blit(skyBG, (0,0))
@@ -1492,7 +1493,7 @@ while run:
                "++++++++++++++++",]
         BG = plainsBG
         theme = 0
-        music = pygame.mixer.music.load("audios/plains.wav")
+        music = pygame.mixer.music.load("audios/plains.mp3")
     elif levelProgress == 1:
         Lvl = ["                                                   ++++++       $$$          +++++++++++                                     ++++  ++                           ",
                "                                                    *++*        $$$          +*+     +*+                                     ++++  ++                           ",
@@ -1506,7 +1507,7 @@ while run:
                "+++++++++++++   +++   ++++++++++++    +++     +++++++  +++++           +++++++++     +++  +++  +++++++++++++++++       ++++++++*++++++++ +++ +++PPP       +++   "]
         BG = plainsBG
         theme = 0
-        music = pygame.mixer.music.load("audios/plains.wav")
+        music = pygame.mixer.music.load("audios/plains.mp3")
     elif levelProgress == 2:
         Lvl = ["    +++++++++                                                                                                                                        *********  ",
                "          ++                                                                                                  ++            +++                $$$    *******   ",
@@ -1520,7 +1521,7 @@ while run:
                "+++++++++++++++++++   +++++++++++++++++  +++++++++++  +++++++++++  ++++++++++++++++++      ++++++++++++++++++++++++++++++++++++++++++PPP++++++++++++++++++++++++"]
         BG = forestBG
         theme = 0
-        music = pygame.mixer.music.load("audios/plains.wav")
+        music = pygame.mixer.music.load("audios/plains.mp3")
     elif levelProgress == 3:
         Lvl = ["                              +++++++                                                                                                               ++++++++++++",
                "                                   -*                                                                                                        +      ++          ",
@@ -1535,7 +1536,7 @@ while run:
                #======F======#
         BG = ruinsBG
         theme = 5
-        music = pygame.mixer.music.load("audios/golucky.wav")
+        music = pygame.mixer.music.load("audios/golucky.mp3")
     elif levelProgress == 4:
         Lvl = ["                                                                                                            ++++++++++      +++++          S++                  ",
                "                                                                                                             *   SY +        +++          ++++ $$$$ +           ",
@@ -1550,7 +1551,7 @@ while run:
                 #======F======#
         BG = autumnBG
         theme = 4
-        music = pygame.mixer.music.load("audios/TheForest.wav")
+        music = pygame.mixer.music.load("audios/TheForest.mp3")
     elif levelProgress == 5:
         Lvl = ["                                  $$$$$$$           +*+       +*++++*++++*               *                       +                                               ",
                "                                 IIIIIIIII           +++++++++++         +               +                       +                                               ",
@@ -1565,7 +1566,7 @@ while run:
                                                                                                              #======F======#
         BG = cloudBG
         theme = 6
-        music = pygame.mixer.music.load("audios/8bitvictory.wav")
+        music = pygame.mixer.music.load("audios/8bitvictory.mp3")
     elif levelProgress == 6:
         Lvl = ["                                                                  + +********+ +  +    s +                       +      s                                        ",
                "                                                                  ***        ***  +  S   +                       +      s          PPPPPP+ $$$                   ",
@@ -1580,7 +1581,7 @@ while run:
                                                                                          #======F======#
         BG = castleBG
         theme = 3
-        music = pygame.mixer.music.load("audios/Mecha Collection.wav")
+        music = pygame.mixer.music.load("audios/Mecha Collection.mp3")
     elif levelProgress == 7:
         Lvl = ["               ",
                "               ",
@@ -1594,7 +1595,7 @@ while run:
                "++++++++++++++++",]
         BG = plainsBG
         theme = 0
-        music = pygame.mixer.music.load("audios/plains.wav")
+        music = pygame.mixer.music.load("audios/plains.mp3")
     Clevel.clear()             # Level loader
     for i in range(10):
         for j in range(len(Lvl[i])):
